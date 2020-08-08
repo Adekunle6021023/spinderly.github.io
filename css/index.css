@@ -162,10 +162,6 @@ a {
     flex-direction: column;
 }
 
-.card-box {
-    
-}
-
 .card-container {
     display: flex;
     flex-direction: column;
@@ -275,9 +271,5 @@ a {
 
     .form {
         margin: 16rem 0 5rem 0;
-    }
-
-    .form-item-one [type=email] {
-        margin: 0.75rm;
     }
 }
