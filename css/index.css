@@ -1,15 +1,79 @@
-                        /*******************
+                        /******FONTS******/    
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Fira+Sans:wght@300;400;500&family=Quicksand:wght@300;400&family=Yellowtail&display=swap');
+                   
+                       /*******************
                             GLOBAL STYLES
                         ******************/
 * {
     margin: 0;
     padding: 0;
     background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23ee5805' fill-opacity='0.28'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+body {
     color: #faebd7;
+    width: 100%;
 }
 
 a {
     text-decoration: none;
+    color: #faebd7;
+}
+
+a:hover {
+    color: orangered;
+}
+
+img {
+    border: orangered solid 2px;
+}
+
+                /*************TYPOGRAPHY****************/
+a {
+    font-family: 'Quicksand',sans-serif;
+}
+
+.company-name {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2rem;
+}
+
+.showcase-text {
+    font-family: 'Quicksand',sans-serif;
+    font-size: 0.75rem;
+}
+
+.form {
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 100;
+    color: #faebd7;
+}
+
+.form-text p {
+    font-size: 3.5rem;
+}
+
+.form-text small {
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.card-title {
+    font-family: 'Fira Sans',sans-serif;
+}
+
+.card-title p {
+    font-weight: 500;
+}
+
+.footer{
+    font-family: 'Quicksand',sans-serif;
+}
+
+.copyright-container {
+    font-family: 'Yellowtail',cursive;
+    font-size: 1.25rem;
 }
 
                 /***************HEADER********************/
@@ -21,12 +85,18 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem;
 }
 
 .company-info-box {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding: 1.75rem;
+}
+
+.icon .fa-compact-disc {
+    color: orangered;
 }
 
 .main-nav-list {
@@ -34,10 +104,11 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-right: 1rem;
 }
 
 .main-nav-list li {
-    padding: 0.75rem;
+    padding: 1.25rem;
 }
 
             /*********************SECTIONS******************/
@@ -45,15 +116,38 @@ a {
                                  /*forms*/
 
 .form {
-    display: block;
-    margin: 11.5rem 0 5rem 0;
+    margin: 10.5rem 0 5rem 0;
     text-align: center;
+    padding: rem;
 }
 
 .form-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
+.form-item-one [type=email] {
+    display: block;
+    border: #faebd7 solid 1px;
+    padding: 0.75rem;
+    color: #faebd7;
+}
+
+.form-item-one [type=email]:focus {
+    background-color: #faebd7;
+    color: orangered;
+    font-size: 1rem;
+}
+
+.form-item-two [type=submit] {
+    border: #faebd7 solid 1px;
+    width: 75px;
+    padding: 0.65rem;
+    color: #faebd7;
+   font-size: 1rem;
+}
+
 
                    /*****feature-showcase-section*****/
 
@@ -69,7 +163,7 @@ a {
 }
 
 .card-box {
-    flex-wrap: wrap;
+    
 }
 
 .card-container {
@@ -78,27 +172,42 @@ a {
 }
 
 .card-title {
-    padding: 0.75rem;
+    padding: 1.75rem;
 }
 
 .card-box {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
+.box-number {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #faebd7 solid 3px;
+    border-radius: 50%;
+    margin: 0 0.75rem 0 0.75rem;
 }
 
 .box-one,
 .box-two,
 .box-three {
     margin: 0.75rem;
+    display: flex;
+    justify-content: center;
+}
+
+.iframe {
+    border: orangered solid 2px;
 }
 
 .img-box-one,
 .img-box-two,
 .img-box-three {
     margin: 0.75rem;
-    width: 100%;
-    height: 300px;
 }
 
 .link-box {
@@ -114,6 +223,11 @@ a {
     justify-content: center;
     margin-bottom: 1.75rem;
     padding: 1rem;
+}
+
+.video {
+    border: orangered solid 2px;
+    box-shadow: 0px 0px 10px orangered;
 }
 
 
@@ -146,6 +260,7 @@ a {
     justify-content: center;
     align-items: flex-end;
     margin-top: 2.75rem;
+    color: orangered;
 }
 
                 /*************************
@@ -156,5 +271,13 @@ a {
     .main-header {
         flex-direction: column;
         -ms-flex-direction: column;
+    }
+
+    .form {
+        margin: 16rem 0 5rem 0;
+    }
+
+    .form-item-one [type=email] {
+        margin: 0.75rm;
     }
 }
