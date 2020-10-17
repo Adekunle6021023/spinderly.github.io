@@ -13,7 +13,6 @@
 
 body {
     color: #faebd7;
-    width: 100%;
 }
 
 a {
@@ -52,6 +51,7 @@ a {
 
 .form-text p {
     font-size: 3.5rem;
+    padding: 1.5rem 0 0 0;
 }
 
 .form-text small {
@@ -85,7 +85,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
 }
 
 .company-info-box {
@@ -118,7 +117,6 @@ a {
 .form {
     margin: 10.5rem 0 5rem 0;
     text-align: center;
-    padding: rem;
 }
 
 .form-items {
@@ -165,6 +163,7 @@ a {
 .card-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .card-title {
@@ -178,14 +177,13 @@ a {
 }
 
 .box-number {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: #faebd7 solid 3px;
     border-radius: 50%;
-    margin: 0 0.75rem 0 0.75rem;
 }
 
 .box-one,
